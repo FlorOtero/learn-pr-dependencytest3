@@ -1,0 +1,28 @@
+### YamlMime:ODataIndex
+uid: Microsoft.Dynamics.CRM.ComplexTypeIndex
+name: Web API ComplexType Reference
+title: "Dynamics 365 Customer Engagement Web API ComplexType Reference | MicrosoftDocs"
+metadata:   
+  ms.date: "10/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+    - "Dynamics 365 (online)"
+  ms.assetid: b9ae2c53-0f0a-4428-8f2b-cf95f9f1ff6a
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+description: "ComplexTypes represent structured data that doesn't have a key. Complex types are frequently returned as a response from using an Action or Function."
+in_this_section:
+- type: Microsoft.Dynamics.CRM.AddItemCampaignActivityResponse
+  description: "Contains the response from the AddItemCampaignActivity action."
+- type: Microsoft.Dynamics.CRM.AddMemberListResponse
+  description: "Contains the response from the AddMemberList action."
+href_see_also:
+- text: "Use the Dynamics 365 Customer Engagement Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex

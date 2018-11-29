@@ -1,0 +1,38 @@
+- name: "OData template"
+  href: index.md
+  items:
+  - uid: Microsoft.Dynamics.CRM.EntityTypeIndex
+    name: EntityType
+    items:
+    - uid: Microsoft.Dynamics.CRM.account
+      name: account
+    - uid: Microsoft.Dynamics.CRM.accountleads
+      name: accountleads
+  - uid: Microsoft.Dynamics.CRM.ActionIndex
+    name: Action
+    items:
+    - uid: Microsoft.Dynamics.CRM.AddAppComponents
+      name: AddAppComponents
+    - uid: Microsoft.Dynamics.CRM.AddItemCampaign
+      name: AddItemCampaign
+  - uid: Microsoft.Dynamics.CRM.FunctionIndex
+    name: Function
+    items:
+    - uid: Microsoft.Dynamics.CRM.CalculateRollupField
+      name: CalculateRollupField
+    - uid: Microsoft.Dynamics.CRM.CalculateTotalTimeIncident
+      name: CalculateTotalTimeIncident
+  - uid: Microsoft.Dynamics.CRM.ComplexTypeIndex
+    name: ComplexType
+    items:
+    - uid: Microsoft.Dynamics.CRM.AddItemCampaignActivityResponse
+      name: AddItemCampaignActivityResponse
+    - uid: Microsoft.Dynamics.CRM.AddMemberListResponse
+      name: AddMemberListResponse
+  - uid: Microsoft.Dynamics.CRM.EnumTypeIndex
+    name: EnumType
+    items:
+    - uid: Microsoft.Dynamics.CRM.AccessRights
+      name: AccessRights
+    - uid: Microsoft.Dynamics.CRM.AssociatedMenuBehavior
+      name: AssociatedMenuBehavior

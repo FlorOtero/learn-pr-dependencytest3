@@ -1,0 +1,30 @@
+### YamlMime:ODataIndex
+uid: Microsoft.Dynamics.CRM.EntityTypeIndex
+name: Web API EntityType Reference
+title: "Dynamics 365 Customer Engagement Web API EntityType Reference | MicrosoftDocs"
+metadata:   
+  ms.date: "10/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+    - "Dynamics 365 (online)"
+  ms.assetid: ed96bb52-43bc-4b4c-a7e2-f47969238bf5
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+description: "An EntityType represents an entity type in the OData v4 entity model."
+in_this_section:
+- type: Microsoft.Dynamics.CRM.account
+  displayName: "Account"
+  description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+- type: Microsoft.Dynamics.CRM.accountleads
+  displayName: "AccountLeads"
+  description: "description."
+href_see_also:
+- text: "Use the Dynamics 365 Customer Engagement Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
