@@ -1,0 +1,685 @@
+### YamlMime:OData
+uid: Microsoft.Dynamics.CRM.account
+name: "account"
+type: entitytype
+metadata: 
+  title: "Microsoft Dynamics 365 Customer Engagement account EntityType Reference | MicrosoftDocs"
+  ms.date: "10/20/2017"
+  ms.service: "crm-online"
+  ms.topic: "reference"
+  applies_to: 
+  - "Dynamics 365 (online)"
+  ms.assetid: b587728b-db31-4d53-be70-98a1ed5fe7e9
+  author: "jimdaly"
+  ms.author: "jdaly"
+  manager: "jdaly"
+  meta-description: "Reference information about the Dynamics 365 Customer Engagement account entitytype."
+description: "Business that represents a customer or potential customer. The company that is billed in business transactions."
+header:
+  entity_set_path: "[organization URI]/api/data/v9.0/accounts"
+  base_type: Microsoft.Dynamics.CRM.accountleads
+  display_name: Account
+  primary_key: accountid
+  primary_name_attribute: name
+  operations_supported:
+  - POST
+  - GET
+  - PATCH
+  - DELETE
+namespace: Microsoft.Dynamics.CRM
+properties:
+  description: "Properties represent fields of data stored in the entity.Some properties are read-only."
+  property_items:
+    - name: accountcategorycode
+      type: Edm.Int32
+      display_name: "Category"
+      description: "Select a category to indicate whether the customer account is standard or preferred."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Preferred Customer"
+        - value: 2
+          label: "Standard"
+    - name: accountclassificationcode
+      type: Edm.Int32
+      display_name: "Classification"
+      description: "Select a classification code to indicate the potential value of the customer account based on the projected return on investment, cooperation level, sales cycle length or other criteria."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Default Value"
+    - name: accountid
+      type: Edm.Guid
+      display_name: "Account"
+      description: "Unique identifier of the account."
+      iscomputed: false
+      isreadonly: false
+    - name: accountnumber
+      type: Edm.String
+      display_name: "Account Number"
+      description: "Type an ID number or code for the account to quickly search and identify the account in system views."
+      iscomputed: false
+      isreadonly: false
+    - name: accountratingcode
+      type: Edm.Int32
+      display_name: "Account Rating"
+      description: "Select a rating to indicate the value of the customer account."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Default Value"
+    - name: address1_addressid
+      type: Edm.Guid
+      display_name: "Address 1: ID"
+      description: "Unique identifier for address 1."
+      iscomputed: false
+      isreadonly: false
+    - name: address1_addresstypecode
+      type: Edm.Int32
+      display_name: "Address 1: Address Type"
+      description: "Select the primary address type."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Bill To"
+        - value: 2
+          label: "Ship To"
+        - value: 3
+          label: "Primary"
+        - value: 4
+          label: "Other"
+    - name: address1_city
+      type: Edm.String
+      display_name: "Address 1: City"
+      description: "Type the city for the primary address."
+      iscomputed: false
+      isreadonly: false
+    - name: address1_composite
+      type: Edm.String
+      display_name: "Address 1"
+      description: "Shows the complete primary address."
+      iscomputed: false
+      isreadonly: true
+    - name: address1_country
+      type: Edm.String
+      display_name: "Address 1: Country/Region"
+      description: "Type the country or region for the primary address."
+      iscomputed: false
+      isreadonly: false
+    - name: address1_county
+      type: Edm.String
+      display_name: "Address 1: County"
+      description: "Type the county for the primary address."
+      iscomputed: false
+      isreadonly: false
+    - name: address1_fax
+      type: Edm.String
+      display_name: "Address 1: Fax"
+      description: "Type the fax number associated with the primary address."
+      iscomputed: false
+      isreadonly: false
+    - name: address1_freighttermscode
+      type: Edm.Int32
+      display_name: "Address 1: Freight Terms"
+      description: "Select the freight terms for the primary address to make sure shipping orders are processed correctly."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "FOB"
+        - value: 2
+          label: "No Charge"
+    - name: address1_latitude
+      type: Edm.Double
+      display_name: "Address 1: Latitude"
+      description: "Type the latitude value for the primary address for use in mapping and other applications."
+      iscomputed: false
+      isreadonly: false
+    - name: address1_shippingmethodcode
+      type: Edm.Int32
+      display_name: "Address 1: Shipping Method"
+      description: "Select a shipping method for deliveries sent to this address."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Airborne"
+        - value: 2
+          label: "DHL"
+        - value: 3
+          label: "FedEx"
+        - value: 4
+          label: "UPS"
+        - value: 5
+          label: "Postal Mail"
+        - value: 6
+          label: "Full Load"
+        - value: 7
+          label: "Will Call"
+    - name: address2_addresstypecode
+      type: Edm.Int32
+      display_name: "Address 2: Address Type"
+      description: "Select the secondary address type."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Default Value"
+    - name: address2_shippingmethodcode
+      type: Edm.Int32
+      display_name: "Address 2: Shipping Method"
+      description: "Select a shipping method for deliveries sent to this address."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Default Value"
+    - name: businesstypecode
+      type: Edm.Int32
+      display_name: "Business Type"
+      description: "Select the legal designation or other business type of the account for contracts or reporting purposes."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Default Value"
+    - name: creditonhold
+      type: Edm.Boolean
+      display_name: "Credit Hold"
+      description: "Select whether the credit for the account is on hold. This is a useful reference while addressing the invoice and accounting issues with the customer."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: customersizecode
+      type: Edm.Int32
+      display_name: "Customer Size"
+      description: "Select the size category or range of the account for segmentation and reporting purposes."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Default Value"
+    - name: customertypecode
+      type: Edm.Int32
+      display_name: "Relationship Type"
+      description: "Select the category that best describes the relationship between the account and your organization."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Competitor"
+        - value: 2
+          label: "Consultant"
+        - value: 3
+          label: "Customer"
+        - value: 4
+          label: "Investor"
+        - value: 5
+          label: "Partner"
+        - value: 6
+          label: "Influencer"
+        - value: 7
+          label: "Press"
+        - value: 8
+          label: "Prospect"
+        - value: 9
+          label: "Reseller"
+        - value: 10
+          label: "Supplier"
+        - value: 11
+          label: "Vendor"
+        - value: 12
+          label: "Other"
+    - name: description
+      type: Edm.String
+      display_name: "Description"
+      description: "Type additional information to describe the account, such as an excerpt from the company's website."
+      iscomputed: false
+      isreadonly: false
+    - name: donotbulkemail
+      type: Edm.Boolean
+      display_name: "Do not allow Bulk Emails"
+      description: "Select whether the account allows bulk email sent through campaigns. If Do Not Allow is selected, the account can be added to marketing lists, but is excluded from email."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Do Not Allow"
+        - value: 0
+          label: "Allow"
+    - name: donotbulkpostalmail
+      type: Edm.Boolean
+      display_name: "Do not allow Bulk Mails"
+      description: "Select whether the account allows bulk postal mail sent through marketing campaigns or quick campaigns. If Do Not Allow is selected, the account can be added to marketing lists, but will be excluded from the postal mail."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: donotemail
+      type: Edm.Boolean
+      display_name: "Do not allow Emails"
+      description: "Select whether the account allows direct email sent from Microsoft Dynamics 365."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Do Not Allow"
+        - value: 0
+          label: "Allow"
+    - name: donotfax
+      type: Edm.Boolean
+      display_name: "Do not allow Faxes"
+      description: "Select whether the account allows faxes. If Do Not Allow is selected, the account will be excluded from fax activities distributed in marketing campaigns."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Do Not Allow"
+        - value: 0
+          label: "Allow"
+    - name: donotphone
+      type: Edm.Boolean
+      display_name: "Do not allow Phone Calls"
+      description: "Select whether the account allows phone calls. If Do Not Allow is selected, the account will be excluded from phone call activities distributed in marketing campaigns."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Do Not Allow"
+        - value: 0
+          label: "Allow"
+    - name: donotpostalmail
+      type: Edm.Boolean
+      display_name: "Do not allow Mails"
+      description: "Select whether the account allows direct mail. If Do Not Allow is selected, the account will be excluded from letter activities distributed in marketing campaigns."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Do Not Allow"
+        - value: 0
+          label: "Allow"
+    - name: donotsendmm
+      type: Edm.Boolean
+      display_name: "Send Marketing Materials"
+      description: "Select whether the account accepts marketing materials, such as brochures or catalogs."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Do Not Send"
+        - value: 0
+          label: "Send"
+    - name: followemail
+      type: Edm.Boolean
+      display_name: "Follow Email Activity"
+      description: "Information about whether to allow following email activity like opens, attachment views and link clicks for emails sent to the account."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Allow"
+        - value: 0
+          label: "Do Not Allow"
+    - name: industrycode
+      type: Edm.Int32
+      display_name: "Industry"
+      description: "Select the account's primary industry for use in marketing segmentation and demographic analysis."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Accounting"
+        - value: 2
+          label: "Agriculture and Non-petrol Natural Resource Extraction"
+        - value: 3
+          label: "Broadcasting Printing and Publishing"
+        - value: 4
+          label: "Brokers"
+        - value: 5
+          label: "Building Supply Retail"
+        - value: 6
+          label: "Business Services"
+        - value: 7
+          label: "Consulting"
+        - value: 8
+          label: "Consumer Services"
+        - value: 9
+          label: "Design, Direction and Creative Management"
+        - value: 10
+          label: "Distributors, Dispatchers and Processors"
+        - value: 11
+          label: "Doctor's Offices and Clinics"
+        - value: 12
+          label: "Durable Manufacturing"
+        - value: 13
+          label: "Eating and Drinking Places"
+        - value: 14
+          label: "Entertainment Retail"
+        - value: 15
+          label: "Equipment Rental and Leasing"
+        - value: 16
+          label: "Financial"
+        - value: 17
+          label: "Food and Tobacco Processing"
+        - value: 18
+          label: "Inbound Capital Intensive Processing"
+        - value: 19
+          label: "Inbound Repair and Services"
+        - value: 20
+          label: "Insurance"
+        - value: 21
+          label: "Legal Services"
+        - value: 22
+          label: "Non-Durable Merchandise Retail"
+        - value: 23
+          label: "Outbound Consumer Service"
+        - value: 24
+          label: "Petrochemical Extraction and Distribution"
+        - value: 25
+          label: "Service Retail"
+        - value: 26
+          label: "SIG Affiliations"
+        - value: 27
+          label: "Social Services"
+        - value: 28
+          label: "Special Outbound Trade Contractors"
+        - value: 29
+          label: "Specialty Realty"
+        - value: 30
+          label: "Transportation"
+        - value: 31
+          label: "Utility Creation and Distribution"
+        - value: 32
+          label: "Vehicle Retail"
+        - value: 33
+          label: "Wholesale"
+    - name: lastonholdtime
+      type: Edm.DateTimeOffset
+      display_name: "Last On Hold Time"
+      description: "Contains the date and time stamp of the last on hold time."
+      iscomputed: false
+      isreadonly: false
+    - name: lastusedincampaign
+      type: Edm.DateTimeOffset
+      display_name: "Last Date Included in Campaign"
+      description: "Shows the date when the account was last included in a marketing campaign or quick campaign."
+      iscomputed: false
+      isreadonly: false
+    - name: marketcap
+      type: Edm.Decimal
+      display_name: "Market Capitalization"
+      description: "Type the market capitalization of the account to identify the company's equity, used as an indicator in financial performance analysis."
+      iscomputed: false
+      isreadonly: false
+    - name: marketcap_base
+      type: Edm.Decimal
+      display_name: "Market Capitalization (Base)"
+      description: "Shows the market capitalization converted to the system's default base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: marketingonly
+      type: Edm.Boolean
+      display_name: "Marketing Only"
+      description: "Whether is only for marketing"
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: merged
+      type: Edm.Boolean
+      display_name: "Merged"
+      description: "Shows whether the account has been merged with another account."
+      iscomputed: false
+      isreadonly: true
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: modifiedon
+      type: Edm.DateTimeOffset
+      display_name: "Modified On"
+      description: "Shows the date and time when the record was last updated. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_externalaccountid
+      type: Edm.String
+      display_name: "External ID"
+      description: "External Account ID from other systems."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_taxexempt
+      type: Edm.Boolean
+      display_name: "Tax Exempt"
+      description: "Select whether the account is tax exempt."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: msdyn_taxexemptnumber
+      type: Edm.String
+      display_name: "Tax Exempt Number"
+      description: "Shows the government tax exempt number."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_travelcharge
+      type: Edm.Decimal
+      display_name: "Travel Charge"
+      description: "Enter the travel charge to include on work orders. This value will be multiplied by the travel charge type."
+      iscomputed: false
+      isreadonly: false
+    - name: msdyn_travelcharge_base
+      type: Edm.Decimal
+      display_name: "Travel Charge (Base)"
+      description: "Value of the Travel Charge in base currency."
+      iscomputed: false
+      isreadonly: true
+    - name: msdyn_travelchargetype
+      type: Edm.Int32
+      display_name: "Travel Charge Type"
+      description: "Specify how travel is charged for this account."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 690970000
+          label: "Hourly"
+        - value: 690970001
+          label: "Mileage"
+        - value: 690970002
+          label: "Fixed"
+        - value: 690970003
+          label: "None"
+    - name: ownershipcode
+      type: Edm.Int32
+      display_name: "Ownership"
+      description: "Select the account's ownership structure, such as public or private."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Public"
+        - value: 2
+          label: "Private"
+        - value: 3
+          label: "Subsidiary"
+        - value: 4
+          label: "Other"
+    - name: participatesinworkflow
+      type: Edm.Boolean
+      display_name: "Participates in Workflow"
+      description: "For system use only. Legacy Microsoft Dynamics CRM 3.0 workflow data."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Yes"
+        - value: 0
+          label: "No"
+    - name: paymenttermscode
+      type: Edm.Int32
+      display_name: "Payment Terms"
+      description: "Select the payment terms to indicate when the customer needs to pay the total amount."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Net 30"
+        - value: 2
+          label: "2% 10, Net 30"
+        - value: 3
+          label: "Net 45"
+        - value: 4
+          label: "Net 60"
+    - name: preferredappointmentdaycode
+      type: Edm.Int32
+      display_name: "Preferred Day"
+      description: "Select the preferred day of the week for service appointments."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Sunday"
+        - value: 1
+          label: "Monday"
+        - value: 2
+          label: "Tuesday"
+        - value: 3
+          label: "Wednesday"
+        - value: 4
+          label: "Thursday"
+        - value: 5
+          label: "Friday"
+        - value: 6
+          label: "Saturday"
+    - name: preferredappointmenttimecode
+      type: Edm.Int32
+      display_name: "Preferred Time"
+      description: "Select the preferred time of day for service appointments."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Morning"
+        - value: 2
+          label: "Afternoon"
+        - value: 3
+          label: "Evening"
+    - name: preferredcontactmethodcode
+      type: Edm.Int32
+      display_name: "Preferred Method of Contact"
+      description: "Select the preferred method of contact."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Any"
+        - value: 2
+          label: "Email"
+        - value: 3
+          label: "Phone"
+        - value: 4
+          label: "Fax"
+        - value: 5
+          label: "Mail"
+    - name: shippingmethodcode
+      type: Edm.Int32
+      display_name: "Shipping Method"
+      description: "Select a shipping method for deliveries sent to the account's address to designate the preferred carrier or other delivery option."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Default Value"
+    - name: statecode
+      type: Edm.Int32
+      display_name: "Status"
+      description: "Shows whether the account is active or inactive. Inactive accounts are read-only and can't be edited unless they are reactivated."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 0
+          label: "Active"
+        - value: 1
+          label: "Inactive"
+    - name: statuscode
+      type: Edm.Int32
+      display_name: "Status Reason"
+      description: "Select the account's status."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Active"
+        - value: 2
+          label: "Inactive"
+    - name: territorycode
+      type: Edm.Int32
+      display_name: "Territory Code"
+      description: "Select a region or territory for the account for use in segmentation and analysis."
+      iscomputed: false
+      isreadonly: false
+      options:
+        - value: 1
+          label: "Default Value"
+lookup_properties:
+  description: "Lookup properties are read-only, computed properties which contain entity primary key Edm.Guid data for one or more corresponding single-valued navigation properties. More information: [Lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/web-api-types-operations#lookup-properties) and [Retrieve data about lookup properties](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api#retrieve-data-about-lookup-properties)."
+  property_items:
+  - name: _territoryid_value
+    single_valued_navigation_property:
+    - territoryid
+    description: "Choose the sales region or territory for the account to make sure the account is assigned to the correct representative and for use in segmentation and analysis."
+  - name: _transactioncurrencyid_value
+    single_valued_navigation_property:
+    - transactioncurrencyid
+    description: "Choose the local currency for the record to make sure budgets are reported in the correct currency."
+single_valued_navigation_properties:
+  description: "Single-valued navigation properties represent lookup fields where a single entity can be referenced. Each single-valued navigation property has a corresponding partner collection-valued navigation property on the related entity."
+  property_items:
+  - name: stageid_processstage
+    type: Microsoft.Dynamics.CRM.accountleads
+    partner: processstage_account
+collection_valued_navigation_properties:
+  description: "Collection-valued navigation properties represent collections of entities which may represent either a one-to-many (1:N) or many-to-many (N:N) relationship between the entities."
+  property_items:
+  - name: SocialActivity_PostAuthorAccount_accounts
+    type: Microsoft.Dynamics.CRM.accountleads
+    partner: postauthoraccount_account
+# This entity has no derived entities.
+operations:
+  description: "The following operations can be used with the account entity type."
+  operation_items:
+  - name: Microsoft.Dynamics.CRM.accountleads
+    binding_type: "Not Bound"
+solutions:
+  description: "The following solutions include the account entity type."
+  solution_items:
+  - type: Microsoft.Dynamics.CRM.accountleads
+    description: "Dynamics 365 workload for service."
+# This entity has no remarks.
+href_see_also:
+- text: "Use the Dynamics 365 Customer Engagement Web API"
+  href: "https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-microsoft-dynamics-365-web-api"
+xref_see_also:
+- Microsoft.Dynamics.CRM.EntityTypeIndex
+- Microsoft.Dynamics.CRM.ActionIndex
+- Microsoft.Dynamics.CRM.FunctionIndex
+- Microsoft.Dynamics.CRM.ComplexTypeIndex
+- Microsoft.Dynamics.CRM.EnumTypeIndex
